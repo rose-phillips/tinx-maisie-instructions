@@ -1,38 +1,97 @@
+* {
+  box-sizing: border-box;
+  color: darkslateblue;
+}
+
 .App {
-  text-align: center;
+  margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin: 0 auto;
+  font-family: "Bitter";
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+table {
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  width: 75%;
+  font-family: "Lato";
+}
+
+#table-head {
+  background-color: rgb(212, 212, 194);
+  overflow: hidden;
+}
+
+.time,
+.activity {
+  width: 20%;
+}
+
+th {
+  padding-left: 20px;
+}
+
+td {
+  padding: 20px;
+  background-color: rgb(242, 242, 230);
+}
+
+.vet-info {
+  font-weight: bold;
+}
+
+.box {
+  width: 32%;
+  margin: 20px 0;
+  padding: 1rem;
+  border: 2px solid palevioletred;
+  border-radius: 1rem;
+  background-color: rgb(242, 242, 230);
+  font-family: "Lato";
+}
+
+.walk {
+  width: 100%;
+}
+
+.walk-text {
+  width: 55%;
+}
+
+img {
+  border-radius: 1rem;
+  width: 550px;
+}
+
+.red {
+  color: #f34822;
+}
+.purple {
+  color: #9d53fe;
+}
+.green {
+  color: #13ae5c;
+}
+.blue {
+  color: #0b99ff;
+}
+
+@media print {
+  .App {
+    margin: 0;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .box {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  table {
+    width: 100%;
+    font-size: 12px;
+    box-shadow: none;
+    page-break-after: always;
+  }
+
+  .walk-text {
+    width: 100%;
   }
 }
